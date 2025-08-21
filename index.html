@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>QR Code Generators</h2>
+      <input type="text" id="text" placeholder="url or text">
+      <button onclick="generateQR()">QR Code yaratish</button>
+      <div id="qrBox">
+        <canvas id="qrcode"></canvas>
+      </div>
+      <div class="colors">
+        <div>
+          <label>QR Code rangi:</label>
+          <input type="color" id="qrColor" value="#000000">
+        </div>
+        <div>
+          <label>QR Code fon rangi:</label>
+          <input type="color" id="bgColor" value="#ffffff">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
